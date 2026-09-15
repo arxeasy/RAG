@@ -19,7 +19,7 @@ class RagService():
             ]
         )
         
-        self.chat_model = ChatTongyi(model=config.chat_model)
+        self.chat_model = ChatTongyi(model=config.chat_model) # type: ignore
         self.chain = self.__get_chain()
         
     def __get_chain(self):
